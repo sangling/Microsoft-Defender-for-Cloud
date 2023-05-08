@@ -37,7 +37,7 @@ By default, the logs color is white. In case you want another color you can use 
 2. In case you use TypeScript language, you can use the infrastructure script. See example in [yamlFileValidator.ts](https://github.com/Azure/Azure-Sentinel/blob/master/.script/yamlFileValidator.ts):
    - Create async validation function that gets file path and returns success in case the validation pass.
    - Create CheckOptions object with 3 properties:  
-     - onCheckFile: the validation validetion function that will run on each file (from step one)  
+     - onCheckFile: the validation validation function that will run on each file (from step one)  
      - onExecError: error behavior in case that the file validation failed  
      - onFinalFailed:  error behavior at the end of the validation, execute in case one of the validation failed
    - Call runCheckOverChangedFiles with properties:
